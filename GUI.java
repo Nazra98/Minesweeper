@@ -2,12 +2,14 @@ import java.awt.*;
 import java.awt.event.*;
 import java.awt.event.ActionListener;
 import javax.swing.*;
+
 /**
  * A simple GUI for the Minesweeper game
  * Provides a Graphical User Interface with buttons for game interactions 
  * @Nazra Sajida (W21005067)
  * @version 1.0 May 2024 
  */
+
 public class GUI extends JFrame implements ActionListener {
     //This is used to create panel in the frame 
     private JPanel infoPanel = new JPanel();
@@ -35,11 +37,13 @@ public class GUI extends JFrame implements ActionListener {
     private JLabel livesLabel = new JLabel("Lives: 3");
     //This is used to create the Label for mode 
     private JLabel modeLabel = new JLabel("Mode: Flag");
+
     //This is used to implement observer observable this has been commented out 
     //private ObservableClass observable;
     /**
      * Constructor to create and display the frame 
      */
+    
     public GUI() {
         super("MineSweeper");
         //observable = new ObservableClass();
@@ -49,6 +53,7 @@ public class GUI extends JFrame implements ActionListener {
     /**
      * The method that constructs the GUI Frame. 
      */
+   
     private void makeFrame() {
         setLayout(new BorderLayout());
         //Create a live label in the GUI frame 
