@@ -4,13 +4,15 @@
  * @author Lauren Scott / Modified by Nazra Sajida 
  * @version 1.0 May 2024
  */
+
 public class Assign {
-    //The row and column being assigned
+   //The row and column being assigned
     private int col, row;
     //The game 
     private Minesweeper game;
     //2D Array to store the game's moves
     Slot[][] moves;
+   
     /**
      * Constructor for Assign class.
      * This gets the total number of moves and calls methods to determine the row that will be filled, and to set the state of the slot being assigned.
